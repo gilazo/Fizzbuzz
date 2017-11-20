@@ -1,10 +1,12 @@
-﻿namespace Carvana.Fizzbuzz
+﻿using System;
+
+namespace Carvana.Fizzbuzz
 {
     class Program
     {
-        static void Main(string[] args)
+        static void Main()
         {
-            
+            Console.WriteLine("Practice 01");
         }
     }
 }
