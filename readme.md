@@ -1,10 +1,9 @@
-# Practice 01
+# Practice 02
 
 ## Acceptance Criteria
 
- 1. Prompt the user to input a number
- 2. If the number provided is a multiple of 3, print "Fizz", else print the number
+ 1. If the number provided is a multiple of 5, print "Buzz"
 
  ### Optional
 
- 1. Write a unit test for the acceptance criteria #2.
+ 1. Write a unit test for the acceptance criteria.
