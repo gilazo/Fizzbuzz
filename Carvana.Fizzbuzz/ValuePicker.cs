@@ -9,7 +9,10 @@ namespace Carvana.Fizzbuzz
             var convertedNumber = Convert.ToInt32(number);
             var isMultipleOfThree = convertedNumber % 3 == 0;
             var isMultipleOfFive = convertedNumber % 5 == 0;
-
+            if (isMultipleOfFive && isMultipleOfThree)
+            {
+                return "Fizz Buzz";
+            }
             if (isMultipleOfThree)
             {
                 return "Fizz";
@@ -19,7 +22,7 @@ namespace Carvana.Fizzbuzz
             {
                 return "Buzz";
             }
-
+          
             return number;
         }
     }

@@ -4,6 +4,13 @@ namespace Carvana.Fizzbuzz.Tests
 {
     public class ValuePickerTests
     {
+
+        [Fact]
+        public void Picker_ValueIsMultipleOfThreeAndFive_FizzBuzzPicked()
+        {
+            var pickedValue = ValuePicker.PickValue("15");
+            Assert.True("Fizz Buzz".Equals(pickedValue));
+        }
         [Fact]
         public void Picker_ValueIsMultipleOfThree_FizzPicked()
         {
