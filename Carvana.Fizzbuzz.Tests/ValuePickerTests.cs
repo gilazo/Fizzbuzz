@@ -18,5 +18,25 @@ namespace Carvana.Fizzbuzz.Tests
             var pickedValue = ValuePicker.PickValue(value);
             Assert.True(value.Equals(pickedValue));
         }
+        [Fact]
+        public void Picker_ValueIsMultipleOfFive_BuzzPicked()
+        {
+            var pickedValue = ValuePicker.PickValue("5");
+            Assert.True("Buzz".Equals(pickedValue));
+
+        }
+        [Fact]
+        public void Picker_ValueIsNotMultipleOfFive_NumberIsPicked()
+        {
+            const string value = "9";
+            var pickedValue = ValuePicker.PickValue(value);
+            Assert.True(value.Equals(pickedValue));
+
+        }
+
+
     }
+        
 }
+
+    
